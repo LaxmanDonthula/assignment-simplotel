@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0px;
+        }
+
+        .nav-bar {
+            height: 10vh;
+            font-weight: 400;
+        }
+
+
+        a {
+            cursor: pointer;
+        }
+
+
+        .menu-btn {
+            width: 10px;
+        }
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #ff8080;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 10vh;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+
+        .nav-item {
+            text-align: center;
+            color: black;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 8px;
+        }
+
+
+        .nav-item:hover {
+            color: #ffffff;
+        }
+
+        .menu-bar-img {
+            width: 16px;
+        }
+
+        @media (min-width: 768px) {
+            ul {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+
+            .nav-item {
+                font-size: 20px;
+            }
+
+            .menu-bar-img {
+                width: 35px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            ul {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+
+            .nav-item {
+                font-size: 24px;
+            }
+
+            .menu-bar-img {
+                width: 50px;
+            }
+        }
+
+        .page-content {
+            box-sizing: border-box;
+            letter-spacing: 2px;
+            width: 100%;
+            font-family: Sans-Serif;
+            font-family: calibri;
+            min-height: 90vh;
+            background-image: linear-gradient(to right, #fffcb3, #f09cec);
+        }
+
+
+        .home-page-content {
+            display: flex;
+        }
+
+
+        .home-page-description {
+            align-self: flex-start;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            min-height: 60vh;
+            margin-left: 10px;
+        }
+
+
+        .click-me-btn {
+            color: #ffffff;
+            background-color: #ff8080;
+            border: none;
+            border-radius: 1px;
+            padding: 5px;
+            width: 80px;
+            height: 30px;
+            cursor: pointer;
+            font-size: 9px;
+        }
+
+
+        .home-page-heading {
+            font-size: 16px;
+            letter-spacing: 3px;
+            margin-bottom: 60px;
+        }
+
+        .home-page-para {
+            font-size: 8px;
+            margin-bottom: 40px;
+        }
+
+        .home-page-img {
+            min-height: 55vh;
+            width: 50%;
+            max-width: 51%;
+
+        }
+
+        @media (min-width: 768px) {
+            .home-page-content {
+                margin-left: 40px;
+
+            }
+
+            .home-page-description {
+                padding: 10px;
+                margin: 10px;
+            }
+
+            .home-page-heading {
+                font-size: 34px;
+            }
+
+            .home-page-para {
+                font-size: 16px;
+            }
+
+            .click-me-btn {
+                font-size: 17px;
+                width: 150px;
+                height: 40px;
+            }
+
+            .home-page-img {
+                width: 50%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .home-page-content {
+                margin-left: 20px;
+
+            }
+
+            .home-page-description {
+                padding: 10px;
+                margin: 10px;
+            }
+
+            .home-page-heading {
+                font-size: 48px;
+            }
+
+            .home-page-para {
+                font-size: 18px;
+            }
+
+            .click-me-btn {
+                font-size: 19px;
+                width: 250px;
+                height: 50px;
+            }
+
+            .home-page-img {
+                width: 50%;
+                min-height: 50vh;
+            }
+        }
+
+        .last-page-content {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .container {
+            width: 150px;
+            display: flex;
+            justify-content: space-between;
+            margin: 7px;
+        }
+
+        .container-1 {
+            height: 120px;
+            width: 65px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .box {
+            height: 58px;
+            width: 65px;
+        }
+
+        .box-3 {
+            height: 120px;
+            width: 65px;
+        }
+
+        .img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .img-1 {
+            width: 100%;
+        }
+
+        @media (min-width:767px) {
+            .container {
+                width: 265px;
+            }
+
+            .container-1 {
+                width: 130px;
+                height: 240px;
+
+            }
+
+            .box {
+                height: 116px;
+                width: 130px;
+            }
+
+            .box-3 {
+                width: 130px;
+                height: 240px;
+
+            }
+
+
+        }
+
+        @media (min-width:1200px) {
+            .container {
+                width: 530px;
+            }
+
+            .container-1 {
+                width: 260px;
+                height: 480px;
+
+            }
+
+            .box {
+                height: 232px;
+                width: 260px;
+            }
+
+            .box-3 {
+                width: 260px;
+                height: 480px;
+
+            }
+
+
+        }
+
+        .last-page-info {
+            background-color: #fb7086;
+            font-family: calibri;
+            letter-spacing: 1px;
+            width: 40%;
+            height: 100px;
+            padding: 1px;
+            padding-left: 5px;
+            margin: 15px;
+
+        }
+
+        .last-page-info>p {
+            font-size: 8px;
+        }
+
+        .last-page-info>h1 {
+            font-size: 14px;
+        }
+
+        .last-page-btn {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            font-family: calibri;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 50px;
+            font-size: 8px;
+        }
+
+        .last-btn {
+            width: 14px;
+        }
+
+        @media (min-width:767px) {
+            .last-page-info {
+                height: 40%;
+                word-spacing: 1px;
+            }
+
+            .last-page-info>p {
+                font-size: 20px;
+            }
+
+            .last-page-info>h1 {
+                font-size: 36px;
+            }
+
+            .last-page-btn {
+                width: 100px;
+                font-size: 21px;
+
+            }
+
+            .last-btn {
+                width: 30px;
+            }
+        }
+
+
+        @media (min-width:1200px) {
+            .last-page-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                height: 40%;
+                word-spacing: 2px;
+            }
+
+            .last-page-info>p {
+                font-size: 22px;
+            }
+
+            .last-page-info>h1 {
+                font-size: 40px;
+            }
+
+            .last-page-btn {
+                width: 120px;
+                font-size: 24px;
+
+            }
+
+            .last-btn {
+                width: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a class="nav-item">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-item">Order</a>
+                    </li>
+                    <li>
+                        <a class="nav-item">Food</a>
+                    </li>
+                    <li>
+                        <a class="nav-item">Restaurent</a>
+                    </li>
+                    <li>
+                        <a class="nav-item">Testimonials</a>
+                    </li>
+                    <li>
+                        <a class="nav-item">Contact Us</a>
+                    </li>
+                    <li>
+                        <a>
+                            <img class="menu-bar-img" src="https://i.ibb.co/x1gBSB8/menu-bar.png" alt="menu-bar" border="0">
+                        </a>
+                    </li>
+                </ul>
+
+
+
+
+
+
+            </nav>
+            <div class="page-content">
+                <div class="home-page-content">
+                    <div class="home-page-description">
+                        <h1 class="home-page-heading">LOREM IPSUM</h1>
+                        <p class="home-page-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Fusce commodo vehicula tellus, vel vestibulum sapien vestibulum a.
+                            Curabitur molestie lorem sed arcu condimentum porttitor. Donec
+                            laoreet massa non dui mattis, id dictum nisl venenatis.
+                        </p>
+                        <button class="click-me-btn">Click Me</button>
+                    </div>
+                    <img class="home-page-img" src="https://i.ibb.co/DRCrGwL/pexels-robin-stickel-70497.jpg" alt="pexels-robin-stickel-70497" border="0">
+                </div>
+
+                <div class="last-page-content">
+                    <div class="container">
+                        <div class="container-1">
+                            <div class="box-1 box">
+                                <img class="img" src="https://i.ibb.co/smvTxGY/pexels-rachel-claire-6752433.jpg" alt="pexels-rachel-claire-6752433" border="0">
+                            </div>
+                            <div class="box-2 box">
+                                <img class="img" src="https://i.ibb.co/LSRnsrz/pexels-eva-bronzini-6141651.jpg" alt="pexels-eva-bronzini-6141651" border="0">
+                            </div>
+                        </div>
+                        <div class="box box-3">
+                            <img class="img img-1" src="https://i.ibb.co/4svxZtt/pexels-mister-mister-3434523.jpg" alt="pexels-mister-mister-3434523" border="0">
+                        </div>
+                    </div>
+                    <div class="last-page-info">
+                        <p>LOREM IPSUM</p>
+                        <h1>LOREM IPSUM SET ADEMIR</h1>
+                        <button class="last-page-btn">Click <img class="last-btn" src="https://i.ibb.co/0ZfV1GW/icons8-arrow-30.png" alt="icons-arrow" /></button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </body>
+
+</html>
